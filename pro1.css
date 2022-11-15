@@ -1,0 +1,119 @@
+/*common */
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+/*  */
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card{
+    align-items: center;
+    text-align: center;
+}
+.container{
+    background-color: rgba(127, 255, 195, 0.199);
+}
+
+.myTown{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/mettur.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+}
+.myTownHead{
+    font-size: 2rem;
+    color: #fff;
+    background-color: rgba(32, 112, 32, 0.712);
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+.myTownPara{
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: rgba(2, 39, 2, 0.89);
+    width: 50%;
+    margin: 15px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.specialHead{
+    font-size: 1.3rem;
+    margin: 2rem auto;
+    padding: 15px;
+}
+
+.myTownSpecial{
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+.specialThings img{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100px;
+}
+
+
+.myInfo{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+    background-color: aquamarine;
+    padding: 2rem 3rem;
+    border-radius: 25px 0 25px 0;
+    box-shadow: 10px 10px 5px 0 grey;
+}
+.profile-img{
+    border-radius: 25px 0;
+    margin-right: 25px;
+    width: 14rem;
+    height: 14rem;
+}
+.profile-info{
+    text-align: center;
+}
+.profile-info h1{
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.profile-info:hover{
+    color: white;
+    text-shadow: 3px 3px grey;
+}
+.profile-info h2{
+    font-size: 1.1rem;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.profile-info p{
+    font-size: 1rem;
+    margin-top: 0%;
+}
+
+@media (min-width:992px) {
+
+    .myTownSpecial{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .specialThings {
+        flex-basis: 28%;
+    }
+}
+@media (max-width: 600px) {
+    .myInfo{
+        flex-direction: column;
+    }
+    .profile-img{
+        margin: auto;
+    }
+}
